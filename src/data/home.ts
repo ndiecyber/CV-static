@@ -1,8 +1,8 @@
 export const welcome = {
   heading: "Profile",
   paragraphs: [
-    "An accomplished academic and researcher specialising in Informatics, with expertise in Information Security, Digital Forensics, and Artificial Intelligence. Doctor of Philosophy (PhD) graduate from Universiti Teknikal Malaysia (UTeM) in 2025.",
-    "Active publisher in reputable international journals with an H-Index of 8 and engaged in cross-national research collaborations.",
+    "I am an Assistant Professor at the Computer and Network Center, National Cheng Kung University (NCKU), Taiwan. I received my Ph.D. degree in the Department of Electrical Engineering and Computer Science (EECS) from National Yang Ming Chiao Tung University (NYCU) in 2024",
+    "I am passionate about developing robust AI-based systems for intrusion detection, protecting AI models from adversarial attacks, and optimizing next-generation network architectures.",
   ],
 };
 
