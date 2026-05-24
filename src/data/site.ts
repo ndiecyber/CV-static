@@ -2,7 +2,7 @@ export const site = {
   name: "Ir. Randi Rizal, Ph.D.",
   shortName: "Randi Rizal",
   title: "Asistant Professor",
-  institution: "Department of Informatics",
+  institution: "Forensic and Security Research Group (FAST), Department of Informatics",
   department:  "Siliwangi University",
   location:
     "Perum Arjamukti Kencana Raya Blok B6 No.4, Arjasari, Leuwisari, Tasikmalaya 46464, Jawa Barat, Indonesia.",
