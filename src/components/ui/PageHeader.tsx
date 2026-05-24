@@ -16,7 +16,7 @@ export default function PageHeader({ eyebrow, title, description }: Props) {
         {title}
       </h1>
       {description && (
-        <p className="mt-3 max-w-2xl text-base text-slate-500 dark:text-slate-400">
+        <p className="mt-3 max-w-2xl text-base text-slate-500 dark:text-slate-400 max-h-12 overflow-hidden sm:max-h-14">
           {description}
         </p>
       )}
