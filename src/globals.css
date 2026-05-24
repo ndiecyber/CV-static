@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Google Sans", system-ui, sans-serif;
+  --color-primary-50: oklch(0.979 0.021 166.113);
+  --color-primary-100: oklch(0.95 0.052 163.051);
+  --color-primary-200: oklch(0.905 0.093 164.15);
+  --color-primary-300: oklch(0.845 0.143 164.978);
+  --color-primary-400: oklch(0.765 0.177 163.223);
+  --color-primary-500: oklch(0.696 0.17 162.48);
+  --color-primary-600: oklch(0.596 0.145 163.225);
+  --color-primary-700: oklch(0.508 0.118 165.612);
+  --color-primary-800: oklch(0.432 0.095 166.913);
+  --color-primary-900: oklch(0.378 0.077 168.94);
+  --color-primary-950: oklch(0.262 0.051 172.552);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight tracking-tight;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased;
+  }
+  .dark body {
+    @apply bg-slate-950 text-slate-200;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  a {
+    @apply transition-colors;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-emerald-500;
+  }
+}
+
+@layer components {
+  .section-card {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-colors sm:p-8;
+  }
+  .dark .section-card {
+    @apply border-slate-800 bg-slate-900/60;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700;
+  }
+  .dark .chip {
+    @apply border-emerald-900/60 bg-emerald-950/60 text-emerald-300;
+  }
+  .divider {
+    @apply h-px w-full bg-slate-200;
+  }
+  .dark .divider {
+    @apply bg-slate-800;
+  }
+}
+
+/* Sidebar scrollbar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 9999px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
