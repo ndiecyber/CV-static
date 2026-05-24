@@ -8,7 +8,7 @@ export const site = {
     "Perum Arjamukti Kencana Raya Blok B6 No.4, Arjasari, Leuwisari, Tasikmalaya 46464, Jawa Barat, Indonesia.",
   email: "randirizal@unsil.ac.id",
   phone: "+62 853 2013 2014",
-  bio: "Academic and researcher in Informatics focused on information security, digital forensics, cryptography, and applied AI.",
+  bio: "Academic and researcher in Informatics focused on information security, digital forensics, cryptography, and applied Artificial Intelligence.",
   socials: {
     linkedin: "",
     github: "",
