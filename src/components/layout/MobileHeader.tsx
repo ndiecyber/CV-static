@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
 import { site } from "@/data/site";
+import { fetchHome } from "@/lib/api";
 
 const buildInitials = (fullName: string): string => {
   const parts = fullName
@@ -18,15 +20,33 @@ export default function MobileHeader() {
   const institution = site.institution;
   const initials = buildInitials(name);
 
-  const avatarUrl = "/images/profile.webp";
+  const [avatarUrl, setAvatarUrl] = useState<string>("");
+  const apiBase = (import.meta.env.VITE_API_URL || "http://localhost:3001").replace(/\/$/, "");
+  const profileSrc = avatarUrl ? `${apiBase}${avatarUrl}` : "/images/profile.webp";
+
+  useEffect(() => {
+    let active = true;
+    const loadAvatar = async () => {
+      try {
+        const data = await fetchHome();
+        if (active && data.avatarUrl) setAvatarUrl(data.avatarUrl);
+      } catch {
+        /* ignore avatar fetch errors */
+      }
+    };
+    loadAvatar();
+    return () => {
+      active = false;
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 bg-white/80 px-4 py-3 backdrop-blur lg:hidden dark:border-slate-800 dark:bg-slate-950/80">
       <Link to="/" className="flex items-center gap-2">
-        {avatarUrl ? (
+        {profileSrc ? (
           <div className="h-9 w-9 overflow-hidden rounded-lg">
             <img
-              src={avatarUrl}
+              src={profileSrc}
               alt={`${name} avatar`}
               width={36}
               height={36}
@@ -38,9 +58,9 @@ export default function MobileHeader() {
             {initials}
           </div>
         )}
-        <div className="leading-tight">
-          <p className="text-sm font-semibold">{name}</p>
-          <p className="text-[11px] text-slate-500 dark:text-slate-400">
+        <div className="min-w-0 leading-tight">
+          <p className="truncate text-sm font-semibold">{name}</p>
+          <p className="truncate text-[11px] text-slate-500 dark:text-slate-400">
             {institution}
           </p>
         </div>

@@ -1,14 +1,64 @@
 import { Award, Calendar, Landmark, Rocket } from "lucide-react";
+import { useEffect, useState } from "react";
 import PageHeader from "@/components/ui/PageHeader";
-
-import {
-  fundings as staticFundings,
-  intellectualProperties as staticIntellectualProperties,
-} from "@/data/projects";
+import { CardSkeleton, PageHeaderSkeleton, SectionHeadingSkeleton } from "@/components/ui/Skeleton";
+import { fetchProjectsData, type ProjectsData } from "@/lib/api";
 
 export default function ProjectsPage() {
-  const fundings = staticFundings;
-  const intellectualProperties = staticIntellectualProperties;
+  const [projectsData, setProjectsData] = useState<ProjectsData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchProjectsData();
+        if (active) setProjectsData(data);
+      } catch (err) {
+        if (active) setError("Failed to load projects data.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <SectionHeadingSkeleton />
+        <div className="space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <CardSkeleton key={i} lines={2} />
+          ))}
+        </div>
+        <SectionHeadingSkeleton />
+        <div className="grid gap-4 md:grid-cols-2">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <CardSkeleton key={i} lines={2} />
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  if (error || !projectsData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const fundings = projectsData.fundings;
+  const intellectualProperties = projectsData.intellectualProperties;
 
   return (
     <>

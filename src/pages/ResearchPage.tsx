@@ -1,15 +1,65 @@
 import { FileText, FlaskConical } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PageHeader from "@/components/ui/PageHeader";
-
 import {
-  researchProjects as staticProjects,
-  publicationPreview as staticPublicationPreview,
-} from "@/data/research";
+  CardSkeleton,
+  PageHeaderSkeleton,
+  SectionHeadingSkeleton,
+} from "@/components/ui/Skeleton";
+import { fetchResearchData, type ResearchData } from "@/lib/api";
 
 export default function ResearchPage() {
-  const researchProjects = staticProjects;
-  const publicationPreview = staticPublicationPreview;
+  const [researchData, setResearchData] = useState<ResearchData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchResearchData();
+        if (active) setResearchData(data);
+      } catch (err) {
+        if (active) setError("Failed to load research data.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <SectionHeadingSkeleton />
+        <div className="grid gap-4 md:grid-cols-2">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <CardSkeleton key={i} lines={2} />
+          ))}
+        </div>
+        <SectionHeadingSkeleton />
+        <CardSkeleton lines={4} />
+      </>
+    );
+  }
+
+  if (error || !researchData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const researchProjects = researchData.researchProjects;
+  const publicationPreview = researchData.publicationPreview;
 
   return (
     <>

@@ -1,14 +1,83 @@
-
 import { BookOpen, History, Users2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import PageHeader from "@/components/ui/PageHeader";
-
-// Static fallbacks
-import { currentCourses as staticCurrentCourses, pastCourses as staticPastCourses, supervisions as staticSupervisions } from "@/data/teaching";
+import {
+  CardSkeleton,
+  PageHeaderSkeleton,
+  SectionHeadingSkeleton,
+  StatCardSkeleton,
+  TableRowSkeleton,
+} from "@/components/ui/Skeleton";
+import { fetchTeachingData, type TeachingData } from "@/lib/api";
 
 export default function TeachingPage() {
-  const currentCourses = staticCurrentCourses;
-  const pastCourses = staticPastCourses;
-  const supervisions = staticSupervisions;
+  const [teachingData, setTeachingData] = useState<TeachingData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchTeachingData();
+        if (active) setTeachingData(data);
+      } catch (err) {
+        if (active) setError("Failed to load teaching data.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <SectionHeadingSkeleton />
+        <div className="grid gap-4 md:grid-cols-2">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <CardSkeleton key={i} lines={3} />
+          ))}
+        </div>
+        <SectionHeadingSkeleton />
+        <div className="section-card overflow-hidden p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm">
+              <tbody>
+                {Array.from({ length: 3 }).map((_, i) => (
+                  <TableRowSkeleton key={i} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <SectionHeadingSkeleton />
+        <div className="grid gap-4 sm:grid-cols-3">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <StatCardSkeleton key={i} />
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  if (error || !teachingData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const currentCourses = teachingData.currentCourses;
+  const pastCourses = teachingData.pastCourses;
+  const supervisions = teachingData.supervisions;
 
   return (
     <>

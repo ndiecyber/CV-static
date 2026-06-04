@@ -1,15 +1,68 @@
 import { Calendar, Globe2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import PageHeader from "@/components/ui/PageHeader";
 import PublicationsList from "@/components/publications/PublicationsList";
-
 import {
-  publications as staticPublications,
-  conferenceParticipations as staticConferenceParticipations,
-} from "@/data/publications";
+  CardSkeleton,
+  PageHeaderSkeleton,
+  PublicationItemSkeleton,
+  SectionHeadingSkeleton,
+} from "@/components/ui/Skeleton";
+import { fetchPublicationsData, type PublicationsData } from "@/lib/api";
 
 export default function PublicationsPage() {
-  const publications = staticPublications;
-  const conferenceParticipations = staticConferenceParticipations;
+  const [pubData, setPubData] = useState<PublicationsData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchPublicationsData();
+        if (active) setPubData(data);
+      } catch (err) {
+        if (active) setError("Failed to load publications data.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <SectionHeadingSkeleton />
+        <CardSkeleton lines={3} />
+        <div className="mt-10">
+          <SectionHeadingSkeleton />
+          <ol className="space-y-3">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <PublicationItemSkeleton key={i} />
+            ))}
+          </ol>
+        </div>
+      </>
+    );
+  }
+
+  if (error || !pubData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const publications = pubData.publications;
+  const conferenceParticipations = pubData.conferenceParticipations;
 
   return (
     <>

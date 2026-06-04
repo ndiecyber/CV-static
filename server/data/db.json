@@ -1,0 +1,1110 @@
+{
+  "home": {
+    "site": {
+      "name": "Ir. Randi Rizal, Ph.D.",
+      "shortName": "Randi Rizal",
+      "title": "Asistant Professor",
+      "institution": "Forensic and Security Research Group (FAST), Department of Informatics",
+      "department": "Siliwangi University",
+      "location": "Perum Arjamukti Kencana Raya Blok B6 No.4, Arjasari, Leuwisari, Tasikmalaya 46464, Jawa Barat, Indonesia.",
+      "email": "randirizal@unsil.ac.id",
+      "phone": "+62 853 2013 2014",
+      "bio": "Academic and researcher in Informatics focused on information security, digital forensics, cryptography, and applied Artificial Intelligence.",
+      "socials": {
+        "linkedin": "",
+        "github": "",
+        "scholar": "https://scholar.google.com/citations?user=ZZ4x68UAAAAJ&",
+        "orcid": "https://orcid.org/0000-0002-4377-2137",
+        "researchGate": "https://www.researchgate.net/profile/Randi-Rizal"
+      }
+    },
+    "welcome": {
+      "heading": "Profile",
+      "paragraphs": [
+        "An accomplished academic and researcher specialising in Informatics, with expertise in Information Security, Digital Forensics, and Artificial Intelligence. Doctor of Philosophy (PhD) graduate from Universiti Teknikal Malaysia (UTeM) in 2025.",
+        "Active publisher in reputable international journals with an H-Index of 8 and engaged in cross-national research collaborations."
+      ]
+    },
+    "recruitment": {
+      "heading": "Current Focus",
+      "body": "Professional work spans lecturing, editorial leadership, academic publishing, IT consulting, and research collaboration in digital forensics, cybersecurity, cryptography, and AI.",
+      "tags": [
+        "Information Security",
+        "Cryptography",
+        "Digital Forensics",
+        "Ethical Hacking"
+      ]
+    },
+    "researchInterests": [
+      {
+        "title": "Information Security",
+        "icon": "ShieldCheck",
+        "description": "Security architecture, threat mitigation, and resilient digital systems for academic, institutional, and public-sector environments."
+      },
+      {
+        "title": "Cryptography",
+        "icon": "Cpu",
+        "description": "Applied digital signatures, secure logging, watermarking, and time-lock encryption for trustworthy digital documents and evidence."
+      },
+      {
+        "title": "Digital Forensics",
+        "icon": "Fingerprint",
+        "description": "IoT forensics, malware investigation, forensic readiness, evidence integrity, and file signature analysis."
+      },
+      {
+        "title": "Ethical Hacking",
+        "icon": "Network",
+        "description": "Security assessment, attack classification, phishing detection, and practical cybersecurity training for real operational use."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Selected Papers",
+        "value": "17"
+      },
+      {
+        "label": "Books",
+        "value": "8"
+      },
+      {
+        "label": "Research Grants",
+        "value": "9"
+      },
+      {
+        "label": "Community Service",
+        "value": "14"
+      }
+    ],
+    "avatarUrl": ""
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "role": "Lecturer",
+      "organization": "Department of Informatics, Universitas Siliwangi",
+      "location": "Tasikmalaya, Indonesia",
+      "period": "2022 - Present",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "role": "Editor-in-Chief",
+      "organization": "JICO - International Journal of Informatics and Computing",
+      "location": "Indonesia",
+      "period": "2025 - Present",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "role": "Editor-in-Chief",
+      "organization": "INNOVATICS - Journal of Innovation in Research of Informatics",
+      "location": "Indonesia",
+      "period": "2025 - Present",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "role": "CEO",
+      "organization": "Sekolah Programmer YuCoding",
+      "location": "Indonesia",
+      "period": "2019 - Present",
+      "description": "Digital coding education platform."
+    },
+    {
+      "id": 5,
+      "role": "Director",
+      "organization": "Publisher Meta Pustaka Intelektual",
+      "location": "Indonesia",
+      "period": "2025 - Present",
+      "description": "Academic book publishing (ISBN)."
+    },
+    {
+      "id": 6,
+      "role": "Director",
+      "organization": "Alphabet Consultant IT",
+      "location": "Indonesia",
+      "period": "2016 - Present",
+      "description": "IT and consulting services."
+    },
+    {
+      "id": 7,
+      "role": "Lecturer",
+      "organization": "Universitas Cipasung",
+      "location": "Tasikmalaya, Indonesia",
+      "period": "2021 - 2022",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "role": "Lecturer",
+      "organization": "Universitas Perjuangan",
+      "location": "Tasikmalaya, Indonesia",
+      "period": "2019 - 2021",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "role": "Head of Computer Lab.",
+      "organization": "Al-Furqon Boarding School",
+      "location": "Indonesia",
+      "period": "2011 - 2018",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "role": "test role",
+      "organization": "test organisasi",
+      "location": "test lokasi",
+      "period": "test period",
+      "description": "test deskripsi"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Deep Learning AI Approach for Expert System Screening of Neonatal Sepsis Disease Based on Android with Health Data Security",
+      "agency": "Internal University Collaborative Research Grant (PKPT)",
+      "period": "2026",
+      "description": "AI-based expert system screening for neonatal sepsis on Android with health data security."
+    },
+    {
+      "id": 2,
+      "title": "Secure Logging Architecture Based on Secure Signature for Ensuring Log Integrity in Digital Forensic Investigation",
+      "agency": "University Excellence Research Grant (PUU)",
+      "period": "2026",
+      "description": "Secure signature architecture for trustworthy forensic logs and evidence integrity."
+    },
+    {
+      "id": 3,
+      "title": "Smart QR Secure Signature Model Based on Time-Lock Encryption for Enhancing Digital Document Integrity and Validity",
+      "agency": "Capacity Development Research Grant (PPKAP)",
+      "period": "2026",
+      "description": "Time-lock encryption and secure signature model for digital document authenticity."
+    },
+    {
+      "id": 4,
+      "title": "Intelligent Web-Based Security System with VERITAS Model Integration for Deepfake Detection",
+      "agency": "University Excellence Research Grant (PUU)",
+      "period": "2025",
+      "description": "Web-based security platform integrating VERITAS model for deepfake detection."
+    },
+    {
+      "id": 5,
+      "title": "Intelligent Malware Anomaly Detection with Transformer Model",
+      "agency": "Junior Lecturer Research Grant (PDP)",
+      "period": "2025",
+      "description": "Transformer-based approach for malware anomaly detection in network traffic."
+    },
+    {
+      "id": 6,
+      "title": "Development of Deep Learning Model to Improve IoT Forensic Investigation Framework",
+      "agency": "National Competitive Research Grant (PFR)",
+      "period": "2025",
+      "description": "Deep learning model to strengthen IoT forensic investigation framework."
+    },
+    {
+      "id": 7,
+      "title": "Security Assessment of Government IT Infrastructure in Tasikmalaya Regency Based on KAMI Index v5.0",
+      "agency": "University Excellence Research Grant (PUU)",
+      "period": "2024",
+      "description": "Government IT infrastructure assessment using KAMI Index v5.0 framework."
+    },
+    {
+      "id": 8,
+      "title": "Optimization of Eco-Maps with Microservice Architecture for Green Campus Support",
+      "agency": "Capacity Development Research Grant (PPKAP)",
+      "period": "2024",
+      "description": "Eco-Maps platform optimization with microservice architecture for green campus support."
+    },
+    {
+      "id": 9,
+      "title": "Development of Forensic Readiness Framework for IoT Device Investigation Based on Deep Learning",
+      "agency": "Competency Enhancement Research Grant (PPKOM)",
+      "period": "2024",
+      "description": "Forensic readiness framework for IoT investigations using deep learning."
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "type": "Journal",
+      "title": "A Deep Learning Approach for Enhancing Internet of Things Forensic Investigation Using DANets",
+      "authors": "N. Widiyasono, R. Rizal, Ruuhwan",
+      "venue": "CMC-Q1",
+      "year": 2026
+    },
+    {
+      "id": 2,
+      "type": "Journal",
+      "title": "GO-X: Gain Ratio and Optuna Driven Optimization for eXtreme Gradient Boosting (XGBoost) in Malware Detection",
+      "authors": "R. Rizal, S. R. Selamat, A. Bramantoro",
+      "venue": "IJICIC-Q2",
+      "year": 2026
+    },
+    {
+      "id": 3,
+      "type": "Journal",
+      "title": "MAnTra: A Transformer-Based Approach for Malware Anomaly Detection in Network Traffic Classification",
+      "authors": "R. Rizal, M. A. Darmawan, S. R. Selamat, A. Rahmatulloh, E. Haerani, G. N. Tarempa",
+      "venue": "JUTIF-S2",
+      "year": 2025
+    },
+    {
+      "id": 4,
+      "type": "Journal",
+      "title": "A Transform-Domain Robust Watermarking Model Using Discrete Wavelet Transform for Image Copyright Security",
+      "authors": "R. Rizal, N. Auliarahman, S. R. Selamat",
+      "venue": "JICO",
+      "year": 2025
+    },
+    {
+      "id": 5,
+      "type": "Conference",
+      "title": "Advanced Residual Networks Model for Detecting Cyberattacks in Internet of Things Forensic Investigations",
+      "authors": "R. Rizal, S. R. Selamat, M. Z. Mas'ud",
+      "venue": "TSSA Conf",
+      "year": 2025
+    },
+    {
+      "id": 6,
+      "type": "Conference",
+      "title": "Content-Based Cyberbullying Detection on Facebook Using Support Vector Machine and Feature Selection",
+      "authors": "S. R. Selamat, R. Rizal, J. Shanggeetha",
+      "venue": "ICRAIE Conf",
+      "year": 2025
+    },
+    {
+      "id": 7,
+      "type": "Conference",
+      "title": "Ensemble Learning for Malware Classification: Performance Evaluation Using Random Forest and Hist Gradient Boosting",
+      "authors": "I. Darmawan, H. Setiaji, R. Rizal, A. Rahmatulloh",
+      "venue": "ICoICT Conf",
+      "year": 2025
+    },
+    {
+      "id": 8,
+      "type": "Journal",
+      "title": "Digitograph: A Mobile Digital Signatures Application for PDF Files Using ED25519 and Asymmetric Encryption",
+      "authors": "A. P. Wahyuni, R. Rizal, S. Elmeftahi",
+      "venue": "JICO",
+      "year": 2025
+    },
+    {
+      "id": 9,
+      "type": "Journal",
+      "title": "Advanced Phishing Attack Detection Through Network Forensic Methods and Incident Response Based on Machine Learning",
+      "authors": "S. R. Selamat, R. Rizal, C. Nursihab",
+      "venue": "JICO",
+      "year": 2025
+    },
+    {
+      "id": 10,
+      "type": "Conference",
+      "title": "Unveiling the Truth: Detecting Fake News Using SVM and TF-IDF",
+      "authors": "R. Rizal, A. Faturahman, A. Impron, I. Darmawan, E. Haerani, A. Rahmatulloh",
+      "venue": "ICADEIS Conf",
+      "year": 2025
+    },
+    {
+      "id": 11,
+      "type": "Journal",
+      "title": "Comparative Sentiment Analysis of YouTube Comments on Indonesia's Electric Vehicle Incentive Policy Using TF-IDF and IndoBERTweet",
+      "authors": "A. S. N. Chairat, R. Rizal, H. Himawan",
+      "venue": "JUTIF",
+      "year": 2025
+    },
+    {
+      "id": 12,
+      "type": "Journal",
+      "title": "Investigation of Malware Redline Stealer Using Static and Dynamic Analysis Method Forensic",
+      "authors": "N. Widiyasono, R. Rizal, A. Sinjaya, S. R. Selamat",
+      "venue": "JARASET-Q2",
+      "year": 2024
+    },
+    {
+      "id": 13,
+      "type": "Journal",
+      "title": "A Forensic Intelligence System for Identification of Data Originality Based on Signature Files",
+      "authors": "N. Widiyasono, R. Rizal, S. R. Selamat",
+      "venue": "JARASET-Q2",
+      "year": 2024
+    },
+    {
+      "id": 14,
+      "type": "Journal",
+      "title": "Enhanced Readiness Forensic Framework for the Complexity of Internet of Things (IoT) Investigation Based on AI",
+      "authors": "R. Rizal, S. R. Selamat, M. Z. Mas'ud",
+      "venue": "JARASET-Q2",
+      "year": 2024
+    },
+    {
+      "id": 15,
+      "type": "Conference",
+      "title": "Advanced Malware Analysis Methods: Behaviour-Based Detection and Reverse Engineering",
+      "authors": "N. Widiyasono, R. Rizal, S. R. Selamat",
+      "venue": "TSSA Conf",
+      "year": 2024
+    },
+    {
+      "id": 16,
+      "type": "Journal",
+      "title": "AResNet Model Using Deep Learning for Enhancing the IoT Forensic Readiness Framework",
+      "authors": "R. Rizal, S. R. Selamat, M. Z. Mas'ud",
+      "venue": "IJIES-Q2",
+      "year": 2024
+    },
+    {
+      "id": 17,
+      "type": "Conference",
+      "title": "Performance Comparison of Multinomial and Bernoulli Naive Bayes with Laplace Smoothing for Fake News Classification",
+      "authors": "F. F. Sabiq, Alam Rahmatulloh, R. Rizal, I. Darmawan",
+      "venue": "ICoABCD Conf",
+      "year": 2024
+    },
+    {
+      "id": 18,
+      "type": "Book Chapter",
+      "title": "AI for Modern Researchers: A Practical Guide to Leveraging AI for Research & Publication",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2026
+    },
+    {
+      "id": 19,
+      "type": "Book Chapter",
+      "title": "IoT Machine Learning Forensics: Concepts, Implementation & Case Studies",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 20,
+      "type": "Book Chapter",
+      "title": "Web Security",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 21,
+      "type": "Book Chapter",
+      "title": "Smart Systems, Smart Decisions",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 22,
+      "type": "Book Chapter",
+      "title": "Fundamentals of Information Security: Concepts, Threats & Protection",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 23,
+      "type": "Book Chapter",
+      "title": "Developing Image Deepfake Detection System Using MesoNet Algorithm",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 24,
+      "type": "Book Chapter",
+      "title": "Digital Forensics Laboratory Management",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2025
+    },
+    {
+      "id": 25,
+      "type": "Book Chapter",
+      "title": "Effective Research Strategies: From Idea to Publication",
+      "authors": "Ir. Randi Rizal, Ph.D.",
+      "venue": "Meta Pustaka Intelektual",
+      "year": 2024
+    },
+    {
+      "id": 26,
+      "type": "test type",
+      "title": "test title",
+      "authors": "test autor",
+      "venue": "test venue",
+      "year": "test year",
+      "doi": "test DOI"
+    }
+  ],
+  "research": [
+    {
+      "id": 1,
+      "title": "Deep Learning AI Approach for Expert System Screening of Neonatal Sepsis Disease Based on Android with Health Data Security",
+      "status": "Ongoing",
+      "period": "2026",
+      "grant": "Internal University Collaborative Research Grant (PKPT)",
+      "tags": [
+        "AI",
+        "Health Data Security",
+        "Android"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Secure Logging Architecture Based on Secure Signature for Ensuring Log Integrity in Digital Forensic Investigation",
+      "status": "Ongoing",
+      "period": "2026",
+      "grant": "University Excellence Research Grant (PUU)",
+      "tags": [
+        "Secure Logging",
+        "Digital Forensics",
+        "Log Integrity"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Smart QR Secure Signature Model Based on Time-Lock Encryption for Enhancing Digital Document Integrity and Validity",
+      "status": "Ongoing",
+      "period": "2026",
+      "grant": "Capacity Development Research Grant (PPKAP)",
+      "tags": [
+        "Cryptography",
+        "Secure Signature",
+        "QR"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Intelligent Web-Based Security System with VERITAS Model Integration for Deepfake Detection",
+      "status": "Completed",
+      "period": "2025",
+      "grant": "University Excellence Research Grant (PUU)",
+      "tags": [
+        "Web Security",
+        "Deepfake Detection",
+        "AI"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Intelligent Malware Anomaly Detection with Transformer Model",
+      "status": "Completed",
+      "period": "2025",
+      "grant": "Junior Lecturer Research Grant (PDP)",
+      "tags": [
+        "Malware Detection",
+        "Transformer",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Development of Deep Learning Model to Improve IoT Forensic Investigation Framework",
+      "status": "Completed",
+      "period": "2025",
+      "grant": "National Competitive Research Grant (PFR)",
+      "tags": [
+        "IoT Forensics",
+        "Deep Learning",
+        "Forensic Readiness"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Security Assessment of Government IT Infrastructure in Tasikmalaya Regency Based on KAMI Index v5.0",
+      "status": "Completed",
+      "period": "2024",
+      "grant": "University Excellence Research Grant (PUU)",
+      "tags": [
+        "Security Assessment",
+        "IT Governance",
+        "KAMI Index"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Optimization of Eco-Maps with Microservice Architecture for Green Campus Support",
+      "status": "Completed",
+      "period": "2024",
+      "grant": "Capacity Development Research Grant (PPKAP)",
+      "tags": [
+        "Eco-Maps",
+        "Microservices",
+        "Green Campus"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Development of Forensic Readiness Framework for IoT Device Investigation Based on Deep Learning",
+      "status": "Completed",
+      "period": "2024",
+      "grant": "Competency Enhancement Research Grant (PPKOM)",
+      "tags": [
+        "IoT",
+        "Deep Learning",
+        "Digital Forensics"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Socialization of Real-Time Attendance Monitoring Technology to Improve Employee Work Discipline, UMKM Gehel Snack",
+      "grant": "PBM-PPPUD Grant",
+      "year": "2024"
+    },
+    {
+      "id": 2,
+      "title": "Socialization and Implementation of Payment Gateway Technology for Charity Donation System",
+      "grant": "External Grant",
+      "year": "2024"
+    },
+    {
+      "id": 3,
+      "title": "Socialization of Eco-Mapping App and Green School Program, Muhammadiyah School Tasikmalaya",
+      "grant": "External Grant",
+      "year": "2025"
+    },
+    {
+      "id": 4,
+      "title": "Implementation of SMART (RT Information Management System) at Arjasari Village, Society 5.0",
+      "grant": "PPMPS Grant",
+      "year": "2025"
+    },
+    {
+      "id": 5,
+      "title": "Workshop on Digital Certificate Utilization with Blockchain Technology, PDM Tasikmalaya",
+      "grant": "PPMPS Grant",
+      "year": "2025"
+    },
+    {
+      "id": 6,
+      "title": "Socialization and Training on Ear Tag Technology for Livestock Data Management, Panji Boma Farm",
+      "grant": "PPPUD Grant",
+      "year": "2025"
+    },
+    {
+      "id": 7,
+      "title": "Workshop on Web Service Technology Implementation for IkutPeduli App, Tasikmalaya Social Activities",
+      "grant": "External Grant Batch-1",
+      "year": "2025"
+    },
+    {
+      "id": 8,
+      "title": "Workshop on QR Code Technology for eLiveStock App at BUMDes Panji Boma, Ciamis",
+      "grant": "External Grant Batch-2",
+      "year": "2025"
+    },
+    {
+      "id": 9,
+      "title": "Implementation of Automated Digital Prayer Time Scheduling, Tamansari Community, Tasikmalaya",
+      "grant": "PPIBM Grant",
+      "year": "2025"
+    },
+    {
+      "id": 10,
+      "title": "Introduction to Robotics Technology for Teachers and Students, SDN Citapen, Tasikmalaya",
+      "grant": "PPIBM Grant",
+      "year": "2025"
+    },
+    {
+      "id": 11,
+      "title": "Digital Transformation in Education: AI Implementation Workshop for School Teachers",
+      "grant": "External Grant Batch-1",
+      "year": "2025"
+    },
+    {
+      "id": 12,
+      "title": "Innovation of Automatic Fish Feeder for Sustainable Aquaculture, Gunungsari Village, Tasikmalaya",
+      "grant": "External Grant Batch-2",
+      "year": "2025"
+    },
+    {
+      "id": 13,
+      "title": "Optimization of Aid Distribution via Blockchain-Based Precision Donation for Disaster Relief, Lazismu Tasikmalaya",
+      "grant": "PBM Grant",
+      "year": "2025"
+    },
+    {
+      "id": 14,
+      "title": "Implementation of AIoT-Based CCTV System to Enhance Environmental Security, Tamansari Mosque Community, Tasikmalaya",
+      "grant": "External Grant Batch-1",
+      "year": "2026"
+    }
+  ],
+  "teaching": [
+    {
+      "id": 1,
+      "code": "IF4301",
+      "title": "AI for Cybersecurity",
+      "level": "Undergraduate",
+      "semester": "Odd Semester 2025/2026",
+      "description": "Introduces students to machine learning techniques applied to intrusion detection, malware analysis, phishing detection, and adversarial machine learning."
+    },
+    {
+      "id": 2,
+      "code": "IF5102",
+      "title": "Advanced Cybersecurity Tactics",
+      "level": "Graduate",
+      "semester": "Odd Semester 2025/2026",
+      "description": "A seminar-style course covering red/blue team operations, threat hunting, incident response and modern offensive/defensive tooling."
+    },
+    {
+      "id": 3,
+      "code": "IF3204",
+      "title": "Digital Forensics",
+      "level": "Undergraduate",
+      "semester": "Odd Semester 2025/2026",
+      "description": "Covers acquisition, examination, and analysis of digital evidence across host, network, and mobile sources, aligned with international best practices."
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Doctor of Philosophy - PhD (S3)",
+      "institution": "Universiti Teknikal Malaysia (UTeM)",
+      "location": "Malaysia",
+      "period": "2025",
+      "description": "Information Security and Digital Forensics."
+    },
+    {
+      "id": 2,
+      "degree": "Professional Engineer (Ir.)",
+      "institution": "Universitas Hasanuddin",
+      "location": "Indonesia",
+      "period": "2025",
+      "description": "Informatics."
+    },
+    {
+      "id": 3,
+      "degree": "Master of Informatics (S2)",
+      "institution": "Universitas Islam Indonesia (UII)",
+      "location": "Indonesia",
+      "period": "2018",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "degree": "Bachelor of Informatics (S1)",
+      "institution": "Universitas Siliwangi",
+      "location": "Indonesia",
+      "period": "2011",
+      "description": ""
+    }
+  ],
+  "personalInformation": [
+    {
+      "label": "Full Name",
+      "value": "Ir. Randi Rizal, Ph.D."
+    },
+    {
+      "label": "Date of Birth",
+      "value": "Tasikmalaya, 27 October 1987"
+    },
+    {
+      "label": "Address",
+      "value": "Perum Arjamukti Kencana Raya Blok B6 No.4, Arjasari, Leuwisari, Tasikmalaya 46464, Jawa Barat, Indonesia."
+    },
+    {
+      "label": "Department",
+      "value": "Informatics, Faculty of Engineering, Universitas Siliwangi, Indonesia"
+    },
+    {
+      "label": "WhatsApp",
+      "value": "+62 853 2013 2014"
+    },
+    {
+      "label": "Email",
+      "value": "randirizal@unsil.ac.id"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Competencies",
+      "items": [
+        "Information Security",
+        "Cryptography",
+        "Digital Forensics",
+        "Ethical Hacking"
+      ]
+    }
+  ],
+  "experiencesMemberships": [
+    "PII Kab. Tasikmalaya - Indonesian Engineers Association, Member, 2024",
+    "APTIKOM - Association of Informatics Higher Education, Member, 2020",
+    "AFDI - Indonesian Digital Forensics Association, Member, 2024",
+    "IAENG - International Association of Engineers, Member, 2024",
+    "SDIWC - Society of Digital Information & Wireless Comm., Member, 2024"
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "issuer": "ICADEIS - Bali, Indonesia",
+      "year": "2025"
+    },
+    {
+      "title": "Best Paper Award",
+      "issuer": "ICoICT - Bandung, Indonesia",
+      "year": "2024"
+    },
+    {
+      "title": "Best Paper Award",
+      "issuer": "ICADEIS - Turkiye",
+      "year": "2022"
+    }
+  ],
+  "intellectualProperties": [
+    {
+      "id": 1,
+      "title": "Panji Boma Apps",
+      "year": "2024",
+      "description": "Application product registered as intellectual property output."
+    },
+    {
+      "id": 2,
+      "title": "AResNet Model Towards Deep IoT Forensics",
+      "year": "2024",
+      "description": "Deep learning model for IoT forensic readiness enhancement."
+    },
+    {
+      "id": 3,
+      "title": "Eco-Maps: Environmental Condition Mapping Application",
+      "year": "2024",
+      "description": "Environmental condition mapping application."
+    },
+    {
+      "id": 4,
+      "title": "SignMU: Muhammadiyah Digital Signature",
+      "year": "2024",
+      "description": "Digital signature application for Muhammadiyah ecosystem."
+    },
+    {
+      "id": 5,
+      "title": "SIDIGS: Siliwangi Digital Signature",
+      "year": "2024",
+      "description": "Institutional digital signature platform."
+    },
+    {
+      "id": 6,
+      "title": "KosanKu Apps - Push Notification with Firebase",
+      "year": "2023",
+      "description": "Application with Firebase push notification integration."
+    },
+    {
+      "id": 7,
+      "title": "File Signature Analyzer Ver 2.0",
+      "year": "2023",
+      "description": "File signature analysis tool for data originality inspection."
+    },
+    {
+      "id": 8,
+      "title": "AI Prototype Model for Cyber Attack Classification",
+      "year": "2023",
+      "description": "Prototype AI model for cyber attack classification."
+    },
+    {
+      "id": 9,
+      "title": "SiAkun Apps: Village Financial Management System",
+      "year": "2023",
+      "description": "Village financial management application."
+    },
+    {
+      "id": 10,
+      "title": "Leaflet Maps Apps for Executive Information Systems",
+      "year": "2023",
+      "description": "Leaflet-based mapping app for executive information systems."
+    }
+  ],
+  "conferenceParticipations": [
+    {
+      "id": 1,
+      "title": "International Seminar on Research of IT and Intelligent Systems - ISRITI",
+      "location": "Yogyakarta, Indonesia",
+      "year": "2025"
+    },
+    {
+      "id": 2,
+      "title": "International Conference on Telecommunication Systems, Services & Applications - TSSA",
+      "location": "Bali, Indonesia",
+      "year": "2025"
+    },
+    {
+      "id": 3,
+      "title": "International Conference on Informatics and Computing - ICIC",
+      "location": "Makassar, Indonesia",
+      "year": "2025"
+    },
+    {
+      "id": 4,
+      "title": "International Conference on Recent Advances & Innovations in Engineering - ICRAIE",
+      "location": "Kuala Lumpur, Malaysia",
+      "year": "2025"
+    },
+    {
+      "id": 5,
+      "title": "International Conference on Advancement in Data Science, E-learning & Information Systems - ICADEIS",
+      "location": "Bali, Indonesia",
+      "year": "2025"
+    },
+    {
+      "id": 6,
+      "title": "International Conference on Information and Communication Technology - ICoICT",
+      "location": "Bandung, Indonesia",
+      "year": "2025"
+    },
+    {
+      "id": 7,
+      "title": "International Seminar on Research of IT and Intelligent Systems - ISRITI",
+      "location": "Yogyakarta, Indonesia",
+      "year": "2024"
+    },
+    {
+      "id": 8,
+      "title": "International Conference on Telecommunication Systems, Services & Applications - TSSA",
+      "location": "Yogyakarta, Indonesia",
+      "year": "2024"
+    },
+    {
+      "id": 9,
+      "title": "International Conference on Informatics and Computing - ICIC",
+      "location": "Bali, Indonesia",
+      "year": "2024"
+    },
+    {
+      "id": 10,
+      "title": "International Conference on Electronic Design - ICED",
+      "location": "Penang, Malaysia",
+      "year": "2024"
+    },
+    {
+      "id": 11,
+      "title": "International Conference on AI, Blockchain, Cloud Computing & Data Analytics - ICoABCD",
+      "location": "Bali, Indonesia",
+      "year": "2024"
+    }
+  ],
+  "publicationPreview": [
+    {
+      "title": "A Deep Learning Approach for Enhancing Internet of Things Forensic Investigation Using DANets",
+      "venue": "CMC-Q1",
+      "year": "2026"
+    },
+    {
+      "title": "GO-X: Gain Ratio and Optuna Driven Optimization for eXtreme Gradient Boosting (XGBoost) in Malware Detection",
+      "venue": "IJICIC-Q2",
+      "year": "2026"
+    },
+    {
+      "title": "MAnTra: A Transformer-Based Approach for Malware Anomaly Detection in Network Traffic Classification",
+      "venue": "JUTIF-S2",
+      "year": "2025"
+    },
+    {
+      "title": "A Transform-Domain Robust Watermarking Model Using Discrete Wavelet Transform for Image Copyright Security",
+      "venue": "JICO",
+      "year": "2025"
+    },
+    {
+      "title": "AResNet Model Using Deep Learning for Enhancing the IoT Forensic Readiness Framework",
+      "venue": "IJIES-Q2",
+      "year": "2024"
+    }
+  ],
+  "editorialRoles": [
+    "Editor-in-Chief - JICO - International Journal of Informatics and Computing (2025 - Present)",
+    "Editor-in-Chief - INNOVATICS - Journal of Innovation in Research of Informatics (2025 - Present)"
+  ],
+  "invitedRoles": [
+    {
+      "title": "AI x Digital Forensic: From Data to Evidence",
+      "event": "International Guest Lecturer",
+      "location": "College of Computing & Informatics, Universiti Tenaga Nasional, Malaysia",
+      "date": "2025"
+    },
+    {
+      "title": "Digital Forensic: Yesterday, Today & Tomorrow",
+      "event": "International Guest Lecturer",
+      "location": "Faculty of ICT, Universiti Teknikal Malaysia (UTeM), Malaysia",
+      "date": "2024"
+    },
+    {
+      "title": "Artificial Intelligence in Digital Forensics",
+      "event": "Invited Speaker",
+      "location": "Dept. of Informatics, Universitas Jenderal Achmad Yani (UNJANI), Indonesia",
+      "date": "2025"
+    },
+    {
+      "title": "Strategies for OJS Management Towards SINTA Accreditation",
+      "event": "Invited Speaker - OJS Management Workshop",
+      "location": "LPPM Universitas Mayasari Bakti (UMB), Tasikmalaya",
+      "date": "2026"
+    },
+    {
+      "title": "Chair of Session",
+      "event": "ISRITI 2024",
+      "location": "Universitas Teknologi Digital Indonesia, Yogyakarta",
+      "date": "2024"
+    },
+    {
+      "title": "Enhancing Incident Response Readiness & Collaborative Strategies",
+      "event": "Participant - Cybersecurity Seminar & Workshop",
+      "location": "BSSN & Swiss German University, Indonesia",
+      "date": "2024"
+    },
+    {
+      "title": "IoT and AI Integration in Computer Systems Engineering",
+      "event": "Webinar Speaker",
+      "location": "Dept. of Computer Systems, Universitas STEKOM, Semarang",
+      "date": "2024"
+    },
+    {
+      "title": "Guest Lecturer - Semester Genap TA 2022/2023",
+      "event": "Guest Lecturer",
+      "location": "Software Engineering & Information Systems, Universitas Cipasung",
+      "date": "2023"
+    },
+    {
+      "title": "National Seminar & Munas AFDI",
+      "event": "Participant",
+      "location": "Indonesian Digital Forensics Association, Central Jakarta",
+      "date": "2024"
+    },
+    {
+      "title": "Inclusive Publication Camp (In-Camp)",
+      "event": "Participant",
+      "location": "Directorate of Research Talent, Kemdiktisaintek, Indonesia",
+      "date": "2026"
+    }
+  ],
+  "trainingPrograms": [
+    {
+      "title": "Patent Application Description Writing (PDPP) Training",
+      "organizer": "Directorate of Research & Development, Kemdiktisaintek",
+      "year": "2026"
+    },
+    {
+      "title": "Inclusive Publication Camp (In-Camp) Workshop",
+      "organizer": "Directorate of Research Talent, Kemdiktisaintek",
+      "year": "2026"
+    },
+    {
+      "title": "Effective AI Strategies for Scientific Publication Quality Workshop",
+      "organizer": "Tumbuhpedia Digital Ekosistem, Yogyakarta",
+      "year": "2025"
+    },
+    {
+      "title": "Clinic: 6 Keys to Successful Research Proposal (DRTPM & BRIN)",
+      "organizer": "RAKORNAS APTIKOM 2025, Bandar Lampung",
+      "year": "2025"
+    },
+    {
+      "title": "AI-Driven Cybersecurity for National TI Workforce Resilience",
+      "organizer": "RAKORNAS APTIKOM 2025, Bandar Lampung, Indonesia",
+      "year": "2025"
+    },
+    {
+      "title": "Cyber Security Clinic",
+      "organizer": "RAKORNAS APTIKOM 2025, Bandar Lampung, Indonesia",
+      "year": "2025"
+    },
+    {
+      "title": "Competency Assessor Upgrading, Assessment Material Unit Development",
+      "organizer": "LSP Universitas Siliwangi, Indonesia",
+      "year": "2024"
+    },
+    {
+      "title": "Digital Literacy for Government Sector, ASN Kemendikbudristek",
+      "organizer": "Ministry of Education, Culture, Research & Technology",
+      "year": "2024"
+    },
+    {
+      "title": "MikroTik Certified Network Associate (MTCNA)",
+      "organizer": "Ec-Council",
+      "year": "2024"
+    },
+    {
+      "title": "MikroTik Certified Routing Engineer (MTCRE)",
+      "organizer": "Ec-Council",
+      "year": "2024"
+    }
+  ],
+  "servicesMemberships": [
+    "PII Kab. Tasikmalaya - Indonesian Engineers Association, Member, 2024",
+    "APTIKOM - Association of Informatics Higher Education, Member, 2020",
+    "AFDI - Indonesian Digital Forensics Association, Member, 2024",
+    "IAENG - International Association of Engineers, Member, 2024",
+    "SDIWC - Society of Digital Information & Wireless Comm., Member, 2024"
+  ],
+  "pastCourses": [
+    {
+      "code": "IF2101",
+      "title": "Computer Networks",
+      "level": "Undergraduate",
+      "years": "2019 – 2023"
+    },
+    {
+      "code": "IF2203",
+      "title": "Operating Systems",
+      "level": "Undergraduate",
+      "years": "2019 – 2022"
+    },
+    {
+      "code": "IF3301",
+      "title": "Information Security",
+      "level": "Undergraduate",
+      "years": "2020 – 2024"
+    },
+    {
+      "code": "IF5201",
+      "title": "Advanced Machine Learning",
+      "level": "Graduate",
+      "years": "2023 – 2024"
+    }
+  ],
+  "supervisions": [
+    {
+      "level": "Ph.D.",
+      "ongoing": 1,
+      "completed": 0
+    },
+    {
+      "level": "Master",
+      "ongoing": 3,
+      "completed": 2
+    },
+    {
+      "level": "Undergraduate",
+      "ongoing": 8,
+      "completed": 24
+    }
+  ],
+  "navLinks": [
+    {
+      "title": "Home",
+      "href": "/"
+    },
+    {
+      "title": "CV & Roles",
+      "href": "/experiences"
+    },
+    {
+      "title": "Research",
+      "href": "/research"
+    },
+    {
+      "title": "Grants & IP",
+      "href": "/projects"
+    },
+    {
+      "title": "Books & Papers",
+      "href": "/publications"
+    },
+    {
+      "title": "Service",
+      "href": "/services"
+    }
+  ],
+  "admin": {
+    "password": "$2b$10$jIW.uOwJ43DQGqOBPAWT.ei64IVoIUZGqm1CeTx/tYN7QDTPm1W6G",
+    "username": "randi"
+  }
+}

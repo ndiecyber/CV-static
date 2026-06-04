@@ -27,6 +27,7 @@ import {
   sanitizeMailtoHref,
   sanitizeTelHref,
 } from "@/lib/safe-href";
+import { fetchHome } from "@/lib/api";
 
 type SocialLink = {
   href: string;
@@ -67,7 +68,9 @@ export default function Sidebar() {
   const emailHref = sanitizeMailtoHref(email);
   const phoneHref = sanitizeTelHref(phone);
 
-  const profileSrc = "/images/profile.webp";
+  const [avatarUrl, setAvatarUrl] = useState<string>("");
+  const apiBase = (import.meta.env.VITE_API_URL || "http://localhost:3001").replace(/\/$/, "");
+  const profileSrc = avatarUrl ? `${apiBase}${avatarUrl}` : "/images/profile.webp";
   const profileAlt = `${shortName} profile`;
 
   const socialLinks = [
@@ -119,6 +122,22 @@ export default function Sidebar() {
     const handleToggle = () => setOpen((prev) => !prev);
     window.addEventListener("sidebar:toggle", handleToggle);
     return () => window.removeEventListener("sidebar:toggle", handleToggle);
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    const loadAvatar = async () => {
+      try {
+        const data = await fetchHome();
+        if (active && data.avatarUrl) setAvatarUrl(data.avatarUrl);
+      } catch {
+        /* ignore avatar fetch errors */
+      }
+    };
+    loadAvatar();
+    return () => {
+      active = false;
+    };
   }, []);
 
   // Lock body scroll while mobile drawer is open.

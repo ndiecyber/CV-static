@@ -6,22 +6,71 @@ import {
   Mic,
   Users2,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 import PageHeader from "@/components/ui/PageHeader";
-
 import {
-  editorialRoles as staticEditorialRoles,
-  invitedRoles as staticInvitedRoles,
-  trainingPrograms as staticTrainingPrograms,
-  memberships as staticMemberships,
-  communityServices as staticCommunityServices,
-} from "@/data/services";
+  CardSkeleton,
+  PageHeaderSkeleton,
+  SectionHeadingSkeleton,
+} from "@/components/ui/Skeleton";
+import { fetchServicesData, type ServicesData } from "@/lib/api";
 
 export default function ServicesPage() {
-  const editorialRoles = staticEditorialRoles;
-  const invitedRoles = staticInvitedRoles;
-  const trainingPrograms = staticTrainingPrograms;
-  const memberships = staticMemberships;
-  const communityServices = staticCommunityServices;
+  const [servicesData, setServicesData] = useState<ServicesData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchServicesData();
+        if (active) setServicesData(data);
+      } catch (err) {
+        if (active) setError("Failed to load services data.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <SectionHeadingSkeleton />
+        <CardSkeleton lines={3} />
+        <SectionHeadingSkeleton />
+        <CardSkeleton lines={3} />
+        <SectionHeadingSkeleton />
+        <div className="space-y-4">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <CardSkeleton key={i} lines={2} />
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  if (error || !servicesData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const editorialRoles = servicesData.editorialRoles;
+  const invitedRoles = servicesData.invitedRoles;
+  const trainingPrograms = servicesData.trainingPrograms;
+  const memberships = servicesData.memberships;
+  const communityServices = servicesData.communityServices;
 
   return (
     <>

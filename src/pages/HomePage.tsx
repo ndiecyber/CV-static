@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   ShieldCheck,
   Cpu,
@@ -9,27 +10,83 @@ import {
   Sparkles,
 } from "lucide-react";
 import PageHeader from "@/components/ui/PageHeader";
-
-import { site } from "@/data/site";
 import {
-  welcome,
-  recruitment,
-  researchInterests,
-  highlights,
-} from "@/data/home";
+  CardSkeleton,
+  PageHeaderSkeleton,
+  SectionHeadingSkeleton,
+  StatCardSkeleton,
+} from "@/components/ui/Skeleton";
+import { fetchHome, type HomeData } from "@/lib/api";
 
 const iconMap = { ShieldCheck, Cpu, Fingerprint, Network } as const;
 
 export default function HomePage() {
-  const shortName = site.shortName;
-  const bio = site.bio;
+  const [homeData, setHomeData] = useState<HomeData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const welcomeParagraphs = welcome.paragraphs;
-  const recruitmentHeading = recruitment.heading;
-  const recruitmentBody = recruitment.body;
-  const recruitmentTags = recruitment.tags;
-  const activeResearchInterests = researchInterests;
-  const activeHighlights = highlights;
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const data = await fetchHome();
+        if (active) setHomeData(data);
+      } catch (err) {
+        if (active) setError("Failed to load content.");
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <PageHeaderSkeleton />
+        <CardSkeleton lines={3} />
+        <section className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <StatCardSkeleton key={i} />
+          ))}
+        </section>
+        <section className="mt-10">
+          <CardSkeleton lines={4} />
+        </section>
+        <section className="mt-10">
+          <SectionHeadingSkeleton />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <CardSkeleton key={i} lines={2} />
+            ))}
+          </div>
+        </section>
+      </>
+    );
+  }
+
+  if (error || !homeData) {
+    return (
+      <div className="section-card">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          {error || "No content available."}
+        </p>
+      </div>
+    );
+  }
+
+  const shortName = homeData.site?.shortName || "";
+  const bio = homeData.site?.bio || "";
+
+  const welcomeParagraphs = homeData.welcome?.paragraphs || [];
+  const recruitmentHeading = homeData.recruitment?.heading || "";
+  const recruitmentBody = homeData.recruitment?.body || "";
+  const recruitmentTags = homeData.recruitment?.tags || [];
+  const activeResearchInterests = homeData.researchInterests || [];
+  const activeHighlights = homeData.highlights || [];
 
   return (
     <>
