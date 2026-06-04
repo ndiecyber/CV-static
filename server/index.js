@@ -45,7 +45,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/content', contentRoutes);
 
 // Catch-all route to serve the React SPA
-app.get('(.*)', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
