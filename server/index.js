@@ -21,15 +21,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = ['http://localhost:5173', 'https://randirizal.my.id'];
 app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files for uploads
+// Serve static files for uploads and frontend
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use(express.static(path.join(__dirname, '../dist')));
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -42,6 +43,11 @@ app.use('/api/services', servicesRoutes);
 app.use('/api/teaching', teachingRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/content', contentRoutes);
+
+// Catch-all route to serve the React SPA
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
